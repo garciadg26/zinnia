@@ -1,0 +1,377 @@
+:root{
+    /* COLORES */
+    --color-white:#ffffff;
+    --color-gris-light:#acacac;
+    --color-gris-claro:#808080;
+    --color-black:#000000;
+    --color-black-gris:#343434;
+    --color-green-zinnia-light:#F5FFDE;
+    --color-green-zinnia-thin:#D0DE6B;
+    --color-green-super-light:#F5FFDE;
+    --color-green-super-thin:#F3F5DF;
+    --color-green-zinnia-normal:#9CC725;
+    /* FONTS */
+    --font-roc-grotesk: roc-grotesk, sans-serif;
+    --font-roc-grotesk-wide: roc-grotesk-wide, sans-serif;
+    --font-cartograph: cartograph-cf, monospace;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* __FONTS__ */
+h1, h2, h3{
+  font-family: var(--font-roc-grotesk-wide);  
+  color: var(--color-black-gris);
+  margin: 0;
+}
+p{
+    font-family: var(--font-cartograph);
+    margin: 0;
+}
+.tit_primero{
+    font-family: var(--font-roc-grotesk-wide);
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.tit_segundo{
+    font-family: var(--font-roc-grotesk-wide);
+    font-size: 2.8rem;
+    font-weight: normal;
+}
+.tit_tercero{
+    font-family: var(--font-roc-grotesk-wide);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.txt_general{
+    color: var(--color-gris-light);
+    font-family: var(--font-cartograph);
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ul{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0;
+}
+
+/* __BTN LINK__ */
+.btn_link{
+    font-family: var(--font-roc-grotesk);
+    color: var(--color-green-zinnia-normal);
+    transition: all 0.4s;
+    border-radius: 4px;
+}
+.btn_link:hover{
+    background-color: var(--color-green-super-thin);
+    text-decoration: none;
+    color: var(--color-green-zinnia-normal);
+    padding: 5px 12px 5px 12px;
+}
+.icon_arrow_link{
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    margin-left: 8px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/svg/arrow_link_green.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* __MENÚ PRINCIPAL__ */
+.logo_menu{
+    width: 80px;
+    height: 40px;
+    background-image: url("../images/svg/zinnia.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+}
+.navbar-collapse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 16px;
+}
+.list_carrito{
+    display: flex;
+}
+.logo_desktop{
+    position: absolute;
+    margin-right: 0;
+    margin-bottom: 0;
+    left: calc(50% - 45px);
+    text-align: center;
+}
+.navbar-nav li a{
+    font-family: var(--font-roc-grotesk);
+    font-weight: normal;
+    color: var(--color-gris-light);
+}
+.navbar-nav li.active a{
+    color: var(--color-green-zinnia-normal);
+    text-decoration: underline;
+    font-weight: bold;
+}
+.list_carrito .item_contacto a{
+    color: var(--color-green-zinnia-normal);
+    text-decoration: underline;
+}
+.list_carrito .vector_carrito{
+    fill: var(--color-green-zinnia-normal);
+}
+#icon_carrito svg{
+    width: 20px;
+    margin-left: 20px;
+}
+.tool_carrito{
+    position: absolute;
+    background-color: var(--color-green-zinnia-normal);
+    color: var(--color-white);
+    font-size: .8rem;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    top: 16px;
+    right: 16px;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 15px;
+}
+
+/* __HOMEPAGE__ */
+#encabezado_home{
+    margin: 24px 0px 48px 0px;
+}
+.logo_encabezado{
+    width: 40vw;
+}
+
+    /* SLIDER */
+.owl-nav{
+    text-align: right;
+    position: relative;
+    top: calc(-500px);
+}
+.ion-ios-arrow-round-back, .ion-ios-arrow-round-forward{
+    display: block;
+    width: 80px;
+    height: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.ion-ios-arrow-round-back{
+    background-image: url("../images/svg/arrow_slide_back.svg");
+}
+.ion-ios-arrow-round-forward{
+    margin-left: 26px;
+    background-image: url("../images/svg/arrow_slide_forward.svg");
+}
+.cont_txt_mw{
+    max-width: 480px;
+}
+.center_txt_max{
+    position: relative;
+    left: calc(50% - 240px);
+}
+
+    /* NUEVA COLECCIÓN */
+.new_colection{
+    margin: 120px 0px 0px;
+}
+.item_new_colection{
+    padding: 60px 0px 0px;
+}
+.fila_product_coleccion{
+    margin: 40px 0px 0px;
+    height: 650px; 
+}
+.tit_producto_general{
+    font-family: var(--font-roc-grotesk);
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--color-black-gris);
+}
+.precio_producto_general{
+    font-family: var(--font-roc-grotesk);
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: var(--color-gris-light);
+}
+.txt_pre{
+    color: var(--color-white);
+    text-decoration: underline;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.cont_img_coleccion:hover .txt_pre{
+    opacity: 1;
+}
+.best_seller_pseudo::after, .nueva_coleccion_pseudo::after, .tendencia_pseudo::after{
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    right: 32px;
+    top: 10px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.4s;
+    transform: rotate(0deg);
+}
+.best_seller_pseudo::after{
+    background-image: url("../images/svg/colection-best-seller.svg");
+    transform: scale(1);
+}
+.nueva_coleccion_pseudo::after{
+    background-image: url("../images/svg/nueva-coleccion-pseudo.svg");
+    transform: rotate(0deg);
+}
+.tendencia_pseudo::after{
+    background-image: url("../images/svg/tendencia-pseudo.svg");
+    transform: rotate(0deg);
+}
+.btn_product_colection:hover .best_seller_pseudo::after{
+    animation-name: AnimabestSeller;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform: rotate(20deg);
+}
+.btn_product_colection:hover .nueva_coleccion_pseudo::after, .btn_product_colection:hover .tendencia_pseudo::after{
+    animation-name: AnimaCircleColeccion;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotate(20deg);
+}
+.overlay_producto{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(208,222,107,0);
+    text-align: center;
+    transition: all 0.4s;
+}
+.cont_img_coleccion:hover .overlay_producto{
+    background-color: rgba(208,222,107,0.5);
+}
+#new_colection .owl-carousel .owl-nav.disabled{
+    display: block;
+    margin-top: 25%;
+}
+#new_colection .owl-carousel .owl-nav .owl-prev{
+    position: absolute;
+    left: -100px;
+    transition: all 0.4s;
+}
+#new_colection .owl-carousel .owl-nav .owl-prev::before{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--color-gris-light);
+    top: -6px;
+    left: -10px;
+    transform: scale(1);
+    transition: all 0.4s;
+}
+#new_colection .owl-carousel .owl-nav .owl-prev:hover::before{
+    transform: scale(0);
+}
+#new_colection .owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    right: -100px;
+}
+#new_colection .owl-carousel .owl-nav .owl-next::before{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--color-gris-light);
+    top: -6px;
+    right: -10px;
+    transform: scale(1);
+    transition: all 0.4s;
+}
+#new_colection .owl-carousel .owl-nav .owl-next:hover::before{
+    transform: scale(0);
+}
+    /* PIEZAS MEMORABLES */
+#piezas_memorables{
+    margin-bottom: 60px;
+}
+.cont_desc_txt{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.cont_product{
+    margin: 60px 0px;
+}
+.produt_home_left{
+    margin-top: 300px;
+}
+
+    /* PLANTA CENTRO */
+#sect_planta_centro{
+    background-color: var(--color-green-super-light);
+}
+.cont_descrip_maceta_verde{
+    text-align: center;
+    margin-top: 140px;
+}
+.planta_centro{
+    position: relative;
+    top: -160px;
+}
+
+
+
+
+
+
+
+
+
+
+/* __ANIMACIONES__ */
+@keyframes AnimabestSeller{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes AnimaCircleColeccion{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(720deg);
+    }
+}
