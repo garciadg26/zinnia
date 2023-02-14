@@ -181,9 +181,16 @@ ul{
 .cont_txt_mw{
     max-width: 480px;
 }
+.cont_txt_mw6{
+    max-width: 600px;
+}
 .center_txt_max{
     position: relative;
     left: calc(50% - 240px);
+}
+.center_txt_max6{
+    position: relative;
+    left: calc(50% - 300px);
 }
 
     /* NUEVA COLECCIÓN */
@@ -332,6 +339,10 @@ ul{
     margin-top: 300px;
 }
 
+    /* MANOS MEXICANAS */
+.manos_mexicanas{
+   margin-bottom: 40px;
+}
     /* PLANTA CENTRO */
 #sect_planta_centro{
     background-color: var(--color-green-super-light);
@@ -345,7 +356,53 @@ ul{
     top: -160px;
 }
 
-
+/* __FOOTER__ */
+.footer_gen{
+    margin-top: 100px;
+}
+.foot_datos_contacto{
+    max-width: 400px;
+    margin-left: calc(50% - 200px);
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.link_contacto{
+    color: var(--color-green-zinnia-normal);
+}
+.footer_gen .legales{
+    margin-top: 100px;
+    padding: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: url("../images/svg/zinnia-back-foot.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.social_media{
+    padding: 20px 0px 40px 0px;
+}
+.social_media > div{
+    display: inherit;
+    flex-direction: row;
+    justify-content: center;
+}
+.social_media svg{
+    display: block;
+    height: 28px;
+    margin: 0 12px;
+}
+.list_social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.list_social a{
+    font-family: var(--font-cartograph);
+    color: var(--color-black-gris);
+    font-size: .9rem;
+}
 
 
 
